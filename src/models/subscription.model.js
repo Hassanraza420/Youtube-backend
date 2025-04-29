@@ -11,7 +11,11 @@ const subscriptionSchema = new Schema(
         channel:{
             type: Schema.Types.ObjectId, //One to whom 'subscriber' is subscribing
             ref: "User"
-        },
+        }
+    },
+    
+    {
+        timestamps: true
     }
 )
 
